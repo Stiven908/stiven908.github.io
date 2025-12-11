@@ -258,6 +258,9 @@ main{
     list-style: circle;
     margin-bottom: 5px;
 }
+.links__document{
+    color: green;
+}
 /*footer*/
 
 footer{
@@ -295,3 +298,4 @@ footer{
     }
 
 }
+
