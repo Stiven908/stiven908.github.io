@@ -221,6 +221,25 @@ main{
 .link__important{
     font-weight: bold;
 }
+  .button-nav{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    
+ } 
+.button-item{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+.button-links{
+    color: rgb(45, 47, 70);
+    text-decoration: none;
+} 
+.button-links:hover{
+    color: rgb(36, 38, 56);
+} 
 /*footer*/
 
 footer{
@@ -248,4 +267,5 @@ footer{
     .main-wrapper, .box--socialnetworks{
         flex-direction: column;
     }
+
 }
