@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="css/styles.css">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__overlay">
+
+        </div>
+        <div class="header__item-content">
+            <h1>Proyecto final SO</h1>
+            <h2 class="h2--header">ACTIVIDAD 3: Instalación y configuración de distribuciones de Linux</h2>
+
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <aside class="aside--nav">
+            <div class="box--nav">
+                <h2>Sumario</h2>
+                <nav class="main--nav">
+                    <ul class="list--nav">
+                        <li class="item--nav item1 "><a class="nav--link link--1" href="actividad1.html">Activida 1</a></li>
+                        <li class="item--nav" ><a class="nav--link" href="actividad2.html">actividad 2</a></li>
+                        <li class="item--nav" ><a class="nav--link" href="index.html">Home</a></li>
+                        <li class="item--nav" ><a class="nav--link" href="actividad4.html">Actividad 4</a></li>
+                        <li class="item--nav" ><a class="nav--link" href="actividad5.html">Actividad 5</a></li>
+                        <li class="item--nav  item6" ><a class="nav--link link--6" href="actividad6.html">Actividad 6</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <main>
+            <div class="box--item item__1">
+                <h3 id="punto1">3.1 Script para ambiente gráfico</h3>
+                <p>El script desarrollado automatiza el proceso de creación de una copia de seguridad de la carpeta Documentos del usuario. Cuando es ejecutado desde el entorno gráfico, genera automáticamente un archivo comprimido (.tar.gz) dentro de una carpeta llamada Backups, preservando la fecha y hora para organizar los respaldos. </p>
+
+                <h4>1.Crear archivo.sh</h4>
+                <p>Antes de hacer el scrip hay que crear el archivo.sh. En tu consola escribe el siguiente comando: nano backup_docs.sh .Esto creara el archivo abriria directamente el editor de texto nano en el que podremos empezar a escribir el script.  </p>
+                <img src="imagenes/small-img/ubuntu/crearSH.png"  class="img img--1"
+                srcset="imagenes/small-img/ubuntu/crearSH.png 400w, imagenes/mid-img/ubuntu/crearSH.png 1245w, imagenes/big-img/ubuntu/crearSH.png 1246w"
+                >
+                <p>Después de haber booteado el equipo con el dispositivo en el que hayas descargado la iso, te aparecerá la interfaz de arriba. A continuación, elegiremos la opción “Try or install ubuntu”.</p>
+                <img src="imagenes/small-img/ubuntu/script.png"  class="img img--1"
+                srcset="imagenes/small-img/ubuntu/script.png 400w, imagenes/mid-img/ubuntu/script.png 1245w, imagenes/big-img/ubuntu/script.png 1246w"
+                >
+
+
+            </div>
+            <div id="punto2" class="box--item item__2">
+                <h4>2.crear el ejecutable </h4>
+                <p>Ya creado el script, hay que crear el ejecutable para poder utilizar lo de manera sencilla. La siguiente imagen muestra la creacion de la carpeta aplications (esto es por si aún no la tienes) 
+                </p>
+                <img src="imagenes/small-img/ubuntu/carpetaApp.png"  class="img img--1"
+                srcset="imagenes/small-img/ubuntu/carpetaApp.png 400w, imagenes/mid-img/ubuntu/carpetaApp.png 1245w, imagenes/big-img/ubuntu/carpetaApp.png 1246w"
+                >
+                <p><p>Ahora el siguiente paso es crear el archivo.desktop (ejecutable). Escribe el siguiente comando: nano ~/.local/share/applications/backup_docs.desktop </p></p>
+                <img src="imagenes/small-img/ubuntu/crearDesktop.png"  class="img img--1"
+                srcset="imagenes/small-img/ubuntu/crearDesktop.png 400w, imagenes/mid-img/ubuntu/crearDesktop.png 1245w, imagenes/big-img/ubuntu/crearDesktop.png 1246w"
+                >
+                <p>Esto abrirá nuevamente el edito nano para poder configurar el archivo como aparece en la siguiente imagen.</p>
+                <p>Para guardar y salir en nano escribe la combinación de teclas: Ctrl + o y Enter y luego Ctrl + x </p>
+                <img src="imagenes/small-img/ubuntu/Ejecutable.png"  class="img img--1"
+                srcset="imagenes/small-img/ubuntu/Ejecutable.png 400w, imagenes/mid-img/ubuntu/Ejecutable.png 1245w, imagenes/big-img/ubuntu/Ejecutable.png 1246w"
+                >
+                <p>A continuación, se anexa el link para los archivos del script y el video que muestra el script en acción: <a href="https://drive.google.com/drive/folders/1UwF58S22I-4cxQltiv0YeYpiV1DsnHSD?usp=drive_link">Link</a></p>
+            </div>
+            <div id="punto3" class="box--item item__3">
+                <h3>3.2 Script de automatización en entorno consola</h3>
+                <p>En este punto se anexará los pasos que se llevaron a cabo para la elaboración del script en consola. </p>
+                <h4>3.Creación del código</h4>
+                <p>Al igual que en el ambiente gráfico, tiene que crear un archivo.sh para poder escribir el script en el. Escribe el siguiente comando: nano backup_cli.sh </p>
+                <p>La siguiente imagen solo ejemplifica una parte del código.  más adelante se anexara el link con los archivos y los videos del script funcionando </p>
+                <img src="imagenes/small-img/fedora/codigoScript.png"  class="img img--1"
+                srcset="imagenes/small-img/fedora/codigoScript.png 400w, imagenes/mid-img/fedora/codigoScript.png 1245w, imagenes/big-img/fedora/codigoScript.png 1246w"
+                >
+                <p>Luego de escribir todo el código, asegúrate de guardarlo con Ctrl + o y Enter, y luego, Ctrl + x. </p>
+                <p>La siguiente imagen muestra un pequeño ejemplo del script en funcionamiento </p>
+                <img src="imagenes/small-img/fedora/runScript2.png"  class="img img--1"
+                srcset="imagenes/small-img/fedora/runScript2.png 400w, imagenes/mid-img/fedora/runScript2.png 1245w, imagenes/big-img/fedora/runScript2.png 1246w"
+                >
+                <p>A continuación, se anexa el link a los archivos y videos del punto en especifico <a href="https://drive.google.com/drive/folders/1MrhUSVZrjAMaXO6_JwynY9ze1xEkJbm6?usp=drive_link">Link</a></p>
+            </div>
+            <div id="punto4" class="box--item item__4"> 
+                <h3>3.3 Gestión de procesos en Linux</h3>             
+                <p>En este punto se anexar la lista de comando que se utilizo para visualización, gestión y Prioridades de procesos: </p>
+                <h4>1. procesos</h4>
+                <h5>-ps aux</h5>
+                <p>El siguiente comando muestra una lista de todos los procesos que se encuentran en la tabla de procesos, pero de forma estática (No se actualiza instantáneamente) </p>
+                <img src="imagenes/small-img/ubuntu/psAux.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/psAux.png 400w, imagenes/mid-img/ubuntu/psAux.png 1245w, imagenes/big-img/ubuntu/psAux.png 1246w"
+                >
+                <p>La siguiente imagen muestra los procesos en la tabla de procesos junto con sus propiedades. </p>
+                <img src="imagenes/small-img/ubuntu/psAux2.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/psAux2.png 400w, imagenes/mid-img/ubuntu/psAux2.png 1245w, imagenes/big-img/ubuntu/psAux2.png 1246w"
+                >
+                <h5>-top</h5>
+                <p>El comando “top” también muestra los procesos en las tablas de procesos y una serie de información adicional. A diferencia de "ps aux” Top si va actualizando la tabla de procesos cada cierto tiempo.</p>
+                <img src="imagenes/small-img/ubuntu/top.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/top.png 400w, imagenes/mid-img/ubuntu/top.png 1245w, imagenes/big-img/ubuntu/top.png 1246w"
+                >
+                <h5>-htop</h5>
+                <p>Htop es un paquete que permite ver los procesos en la tabla de procesos y poder gestionarlos fácilmente. </p>
+                <p>Para instalarlo escribe el comando: sudo dnf isntall htop </p>
+                <p>Y para ejecutarlo simplemente escribe el comando: htop </p>
+                <img src="imagenes/small-img/ubuntu/htop.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/htop.png 400w, imagenes/mid-img/ubuntu/htop.png 1245w, imagenes/big-img/ubuntu/htop.png 1246w"
+                >
+                <h5>-pstree</h5>
+                <p>“pstree” es un comando que muestra los procesos en forma de árbol. Para ejecutarlo escribe el comando: pstree –p </p>
+                <img src="imagenes/small-img/ubuntu/pstree.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/pstree.png 400w, imagenes/mid-img/ubuntu/pstree.png 1245w, imagenes/big-img/ubuntu/pstree.png 1246w"
+                >
+            </div>
+            <div id="punto5" class="box--item item__5">
+                <h4> 2. Gestión</h4>
+                <h5>-psgrep</h5>
+                <p>“psgrep" es comando que te enseña el PID (Process ID) de un proceso en especifico </p>
+                <p>Para ejecutar el comando escribe: psgre “nombre de proceso” </p>
+                <img src="imagenes/small-img/ubuntu/psGrep.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/psGrep.png 400w, imagenes/mid-img/ubuntu/psGrep.png 1245w, imagenes/big-img/ubuntu/psGrep.png 1246w"
+                >
+                <h5>-Kill</h5>
+                <p>Kill es un comando que sirve para terminar con procesos; tiene diferentes formas de usarse. Para este ejemplo anexaremos el comando: killall “Nombre del proceso”, el cual se encarga de terminar con todos los procesos que tengas ese nombre en común</p>
+                <img src="imagenes/small-img/ubuntu/kill.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/kill.png 400w, imagenes/mid-img/ubuntu/kill.png 1245w, imagenes/big-img/ubuntu/kill.png 1246w"
+                >
+                <p>En esta imagen se puede observar cómo cuando se ejecuta el proceso, el icono del navegador desaparece, puesto que todos los procesos con ese nombre se pararon. </p>
+                <img src="imagenes/small-img/ubuntu/killBrave.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/killBrave.png 400w, imagenes/mid-img/ubuntu/killBrave.png 1245w, imagenes/big-img/ubuntu/killBrave.png 1246w"
+                >
+            </div>
+            <div id="punto6" class="box--item item__6">
+                <h4>3. Prioridades</h4>
+                <h5>-nice & renice</h5>
+                <p>Ambos comandos trabajan sobre las prioridades de los procesos. Mientras que nice sirve para asignar una prioridad específica a procesos que vayan a iniciarm, renice sirve para cambiar la prioridad de procesos ya existentes. </p>
+                <img src="imagenes/small-img/ubuntu/nice&renice.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
+                srcset="imagenes/small-img/ubuntu/nice&renice.png 400w, imagenes/mid-img/ubuntu/nice&renice.png 1245w, imagenes/big-img/ubuntu/nice&renice.png 1246w"
+                >
+                <p>A continuación, se anexarán un documento con la explicación de los comandos de manera más detallada: <a href="https://drive.google.com/file/d/1uNxG8152K9BF3kQX8tIWNKThHnT4FwQP/view?usp=drive_link">link</a></p>
+                
+            </div>
+            <div id="punto7" class="box--item item__7">
+                <h3>3.4 Programación básica con hilos en Java</h3>
+                <p>En este punto se va a anexar el código fuente del programa desarrollado en java que simula utilización de hilos en java </p>
+                <h4>1. Concurrencia con hilos</h4>
+                <p>Este programa crea tres hilos que comparten un mismo objeto Contador y realizan incrementos simultáneos sobre él. Para evitar condiciones de carrera se utiliza el método synchronized en incrementar(), garantizando que solo un hilo puede modificar el contador a la vez. Sin esta sincronización, los hilos podrían interferir entre sí y producir un valor final incorrecto. Al final, el programa muestra el valor total incrementado, demostrando una ejecución concurrente segura. </p>
+                <p>a siguiente imagen muestra un pequeño ejemplo del codigo realizado.</p>
+                <img src="imagenes/small-img/ubuntu/code.png" class="img img--2"
+                srcset="imagenes/small-img/ubuntu/code.png 400w, imagenes/mid-img/ubuntu/code.png 1245w, imagenes/big-img/ubuntu/code.png 1246w"
+                >
+                <p>Esta imagen muestra el proyecto ya construido para su ejecución. </p>
+                <img src="imagenes/small-img/ubuntu/build.png" class="img img--2"
+                srcset="imagenes/small-img/ubuntu/build.png 400w, imagenes/mid-img/ubuntu/build.png 1245w, imagenes/big-img/ubuntu/build.png 1246w"
+                >
+                <p>A continuación, se anexa el link que lleva al codigo fuente del programa realizado en el punto 3.4: <a href="https://drive.google.com/drive/folders/1yXUcNxSVURLalHlBYhxEe3MIJY0-TztL?usp=drive_link">Link</a></p>
+            </div>
+        </main>
+        <aside class="box--socialnetworks">
+            <nav>
+                <div class="box--nav2">
+                    <details>
+                        <summary>Actividad 3.1</summary>
+                            <ul class="list--nav">
+                                <li   class="item--nav2"><a href="#punto1" class="aside--link link__1">Crear archivo.sh</a></li>
+                                <li   class="item--nav2"><a href="#punto2" class="aside--link link__2">Crear ejecutable</a></li>
+                            </ul>
+                    </details>
+                    <details>
+                        <summary>Activida 3.2</summary>
+                            <ul class="list--nav">
+                                <li class="item--nav2"><a href="#punto3" class="aside--link link__3">Script consola</a></li>
+                            </ul>
+                    </details>
+                    <details>
+                        <summary>Actividad 3.3</summary>
+                            <ul class="list--nav">
+                                <li  class="item--nav2"><a href="#punto4" class="aside--link link__4">Procesos</a></li>
+                                <li class="item--nav2"><a href="#punto5" class="aside--link link__5">Gestión</a></li>
+                                <li class="item--nav2"><a href="#punto6" class="aside--link link__6">Prioridades</a></li>
+                            </ul>
+                    </details>
+                    <details>
+                        <summary>Actividad 3.4</summary>
+                            <ul class="list--nav">
+                            
+                                <li  class="item--nav2"><a href="#punto7" class="aside--link link__7">Concurrencia con hilos</a></li>
+                            </ul>
+                    </details>
+                </div>    
+            </nav>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer--content">
+            <h4>Proyecto final SO</h4>
+            <h5>about us</h5>
+        </div>
+    </footer>
+</body>
+</html>
