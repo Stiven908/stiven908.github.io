@@ -165,6 +165,25 @@ aside, main{
 .item--nav:last-child{
     border-radius: 0 0 10px 10px;
 }
+ .button-nav{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    
+ } 
+.button-item{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(36, 38, 56);
+}
+.button-links{
+    color: #fff;
+    text-decoration: none;
+} 
+.button-links:hover{
+    color: #ddd;
+} 
     
 
 /*main section*/
@@ -268,4 +287,11 @@ footer{
     .main-wrapper, .box--socialnetworks{
         flex-direction: column;
     }
+
+}
+@media screen and (min-width: 800px) {
+       .item_3, .item_4, .item_5, .item_5, .item_6, .item_7, .item_8, .item_9{
+        display: none;
+    }
+
 }
