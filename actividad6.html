@@ -36,130 +36,98 @@
         </aside>
         <main>
             <div class="box--item item__1">
-                <h2>ACTIVIDAD 3: Instalación y configuración de distribuciones de Linux</h2>
-                <h3 id="punto1">Instalación del SO</h3>
-                <p>En este punto enseñaremos el paso a paso para instlar el sistema operativo ubuntu</p>
+                <h3 id="punto1">Actividad 6.1: Instalación de Minikube o K3s en Linux y kubectl</h3>
+                <p>Se hizo la instalación completa de minikube en una distribución de Linux grafica</p>
 
-                <h4>1. correr la ISO</h4>
-                <p>Bootea tu equipo con el equipo donde hayas descargado la iso, ya sea en un cd, usb, etc.</p>
-                <img src="imagenes/small-img/ubuntu/img1.png"  class="img img--1"
-                srcset="imagenes/small-img/ubuntu/img1.png 400w, imagenes/mid-img/ubuntu/medio.png 1245w, imagenes/big-img/ubuntu/isobig.png 1246w"
+                <h4>Paso1. Actualizar configuraciones</h4>
+                <p>Actualizar las configuraciones con sudo apt update</p>
+                <img src="imagenes/small-img/debian/Paso3(punto6.1).png"  class="img img--1"
+                srcset="imagenes/small-img/debian/Paso3(punto6.1).png 400w, imagenes/mid-img/debian/Paso3(punto6.1).png 1245w, imagenes/big-img/debian/Paso3(punto6.1).png 1246w"
                 >
-                <p>Después de haber booteado el equipo con el dispositivo en el que hayas descargado la iso, te aparecerá la interfaz de arriba. A continuación, elegiremos la opción “Try or install ubuntu”.</p>
-                <p>Esto nos llevará de inmediato a la configuración de instalación mediante la interfaz gráfica Gnome</p>
 
 
             </div>
             <div id="punto2" class="box--item item__2">
-                <h4  >2. Idioma del equipo</h4>
-                <p>En este menú podrás  elegir el idioma con el que 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat, dolore omnis earum recusandae pariatur officiis veniam porro. Mollitia molestias odit nobis at animi similique quam aliquid saepe facere culpa!
-                </p>
-                <img class="img--2"  src="imagenes/small-img/ubuntu/idioma.png" alt="Esta imagen enseña el primer menu que aparece al correr la iso de ubuntu"
+                <h4  >Paso2.  Descargar minikube</h4>
+                <p>Descargar el archivo binario de minikube para la distribución de Linux</p>
+                <img class="img--2"  src="imagenes/small-img/debian/Paso1(punto6.1).png" alt="Esta imagen enseña el primer menu que aparece al correr la iso de ubuntu"
                 
-                srcset="imagenes/small-img/ubuntu/idioma.png 400w, imagenes/mid-img/ubuntu/idioma.png 1245w, imagenes/big-img/ubuntu/idioma.png 1246w"
+                srcset="imagenes/small-img/debian/Paso1(punto6.1).png 400w, imagenes/mid-img/debian/Paso1(punto6.1).png 1245w, imagenes/big-img/debian/Paso1(punto6.1).png 1246w"
                 >
             </div>
             <div id="punto3" class="box--item item__3">
-                <h4>3. Accesibilidad</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore reprehenderit veniam quasi similique consequuntur, eveniet aut commodi cupiditate, neque in excepturi maxime iusto quae impedit perferendis quod sed blanditiis!</p>
-                <img src="imagenes/small-img/ubuntu/accesibilidad.png" 
-                alt="Esta imagen enseña el menu con todas las opciones acerca de la Accesibilidad" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/accesibilidad.png 400w, imagenes/mid-img/ubuntu/accesibilidad.png 1245w, imagenes/big-img/ubuntu/accesibilidad.png 1246w"
-                >
+                <h4>Paso3.  Instalar minikube</h4>
+                <p>instalar minikube para poder usarlo en cualquier carpeta</p>
+                <img src="imagenes/small-img/debian/Paso2(punto6.1).png" 
+                srcset="imagenes/small-img/debian/Paso2(punto6.1).png 400w, imagenes/mid-img/debian/Paso2(punto6.1).png 1245w, imagenes/big-img/debian/Paso2(punto6.1).png 1246w"
+                
                 >
             </div>
             <div id="punto4" class="box--item item__4">
-                <h4>4. Disposición del teclado</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti sequi odit, modi inventore hic eligendi, est ratione optio numquam facilis aliquam dolorem totam ex aperiam fugit amet debitis cumque animi?</p>
-                <img src="imagenes/small-img/ubuntu/teclado.png"   class="img img--2" alt="Esta imagen enseña el menu de las opciones para elegir la disposicionn de teclado" class="img img--3"
-                srcset="imagenes/small-img/ubuntu/teclado.png 400w, imagenes/mid-img/ubuntu/teclado.png 1245w, imagenes/big-img/ubuntu/teclado.png 1246w"
+                <h4>Paso4. Actualizar configuraciones</h4>
+                <p>Actualizar las configuraciones para evitar problemas </p>
+                <img src="imagenes/small-img/debian/Paso3(punto6.1).png"   class="img img--2" 
+                srcset="imagenes/small-img/debian/Paso3(punto6.1).png 400w, imagenes/mid-img/debian/Paso3(punto6.1).png 1245w, imagenes/big-img/debian/Paso3(punto6.1).png 1246w"
                 >
             </div>
             <div id="punto5" class="box--item item__5">
-                <h4> 5. Instalación interactiva</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quibusdam harum quasi incidunt iusto fugiat reiciendis libero ratione voluptate odio commodi corrupti nesciunt, facere est provident ab exercitationem? At, aspernatur.</p>
-                <img src="imagenes/small-img/ubuntu/instalaccion-interactiva.png" alt="Este menu enseña las opciones de como instalar el SO" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/instalacion-interactiva.png 400w, imagenes/mid-img/ubuntu/instalacion-interactiva.png 1245w, imagenes/big-img/ubuntu/instalacion-interactiva.png 1246w"
+                <h4>Paso5. Instalar herramientas</h4>
+                <p>instalar herramientas necesarias para instalar cosas desde repositorios HTTPS</p>
+                <img src="imagenes/small-img/debian/Paso4(punto6.1).png" class="img img--2"
+                srcset="imagenes/small-img/debian/Paso4(punto6.1).png 400w, imagenes/mid-img/debian/Paso4(punto6.1).png 1245w, imagenes/big-img/debian/Paso4(punto6.1).png 1246w"
                 >
             </div>
             <div id="punto6" class="box--item item__6">
-                <h3>Partcion del disco</h3>
-                <h4>6. ¿Cómo quieres instalar ubuntu?</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat accusantium tempora, suscipit nihil odio expedita ipsum culpa doloribus id. Praesentium exercitationem voluptatibus in sunt! Maiores quas iusto eveniet quaerat nihil.</p>
-                <img src="imagenes/small-img/ubuntu/configuracion-del-disco.png" alt="Este menu eneseña las opciones de configuracion del disco" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/configuracion-del-disco.png 400w, imagenes/mid-img/ubuntu/configuracion-del-disco.png 1245w, imagenes/big-img/ubuntu/instalacion-interactiva.png 1246w"
+                <h4>Paso6. Descargar clave GPG</h4>
+                <p>Descargar clave: descargar la clave GPG de Google lo cual nos permite verificar <br>que los paquetes que descarguemos sean auténticos</p>
+                <img src="imagenes/small-img/debian/Paso5(punto6.1).png"  class="img img--2"
+                srcset="imagenes/small-img/debian/Paso5(punto6.1).png 400w, imagenes/mid-img/debian/Paso5(punto6.1).png 1245w, imagenes/big-img/debian/Paso5(punto6.1).png 1246w"
                 >
             </div>
             <div id="punto7" class="box--item item__7">
-                <h4>7. Partción manual</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, enim in blanditiis necessitatibus, illum cumque at, beatae sunt ea rerum rem. Quae id dicta vero laborum quidem reiciendis unde laboriosam!</p>
-                <img src="imagenes/small-img/ubuntu/particion-manual.png" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/particion-manual.png 400w, imagenes/mid-img/ubuntu/particion-manual.png 1245w, imagenes/big-img/ubuntu/particion-manual.png 1246w"
+                <h4>Paso7. Actualizar configuraciones</h4>
+                <p>: actualizamos nuevamente las configuraciones para evitar problemas</p>
+                <img src="imagenes/small-img/debian/Paso6(punto6.1).png" class="img img--2"
+                srcset="imagenes/small-img/debian/Paso6(punto6.1).png 400w, imagenes/mid-img/debian/Paso6(punto6.1).png 1245w, imagenes/big-img/debian/Paso6(punto6.1).png 1246w"
                 >
             </div>
             <div id="punto8" class="box--item item__8">
-                <h4>8. Crear la partición boot</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quidem esse itaque doloribus. Magnam ab, molestias inventore dolorum, adipisci iure accusantium, architecto quas obcaecati fuga delectus eaque consequatur quia eius!</p>
-                <img src="imagenes/small-img/ubuntu/boot.png" alt="Esta imagen ensela la configuracion para el particionamiento del BOOT" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/boot.png 400w, imagenes/mid-img/ubuntu/boot.png 1245w, imagenes/big-img/ubuntu/boot.png 1246w"
+                <h4>Paso8. Instalar kubectl</h4>
+                <p>Instalamos kubectl lo que nos permitirá manejar pods entre otras cosas</p>
+                <img src="imagenes/small-img/debian/Paso7(punto6.1).png" class="img img--2"
+                srcset="imagenes/small-img/debian/Paso7(punto6.1).png 400w, imagenes/mid-img/debian/Paso7(punto6.1).png 1245w, imagenes/big-img/debian/Paso7(punto6.1).png 1246w"
                 >
             </div>
             <div id="punto9" class="box--item item__9">
-                <h4>9. Crear la partición swap</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet debitis ut nulla assumenda reprehenderit beatae placeat, saepe illo non perferendis consequatur fugiat a velit, sit maxime enim, obcaecati illum est!</p>
-                <img src="imagenes/small-img/ubuntu/swapp.png" alt="Esta imagen enseña la configuracion para el particionamiento swap" class="img img--2" 
-                srcset="imagenes/small-img/ubuntu/swapp.png 400w, imagenes/mid-img/ubuntu/swapp.png 1245w, imagenes/big-img/ubuntu/swapp.png 1246w"
+                <h4>Paso9. Verificar Instalacion de kubectl</h4>
+                <p>verificamos si se instalo kubectl con kubectl versión –client y kubectl cluster -info</p>
+                <img src="imagenes/small-img/debian/kubectlversion-kubectl_cluster-info.png"  class="img img--2" 
+                srcset="imagenes/small-img/debian/kubectlversion-kubectl_cluster-info.png 400w, imagenes/mid-img/debian/kubectlversion-kubectl_cluster-info.png 1245w, imagenes/big-img/debian/kubectlversion-kubectl_cluster-info.png 1246w"
                 >
             </div>
             <div id="punto10" class="box--item item__10">
-                <h4>10. Crear la particion raiz "/"</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium, amet ratione, ullam in voluptatum voluptas tempora modi quo, iste beatae ex magnam minima dolore vitae! Maiores repellendus veritatis iusto.</p>
-                <img src="imagenes/small-img/ubuntu/root.png raiz" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/root.png 400w, imagenes/mid-img/ubuntu/root.png 1245w, imagenes/big-img/ubuntu/root.png 1246w"
+                <h4>Paso10. Verificar la instalacion de minikube</h4>
+                <p>Verificamos que se instaló minikube correctamente con minikube start </p>
+                <img src="imagenes/small-img/debian/minikube-start.png" class="img img--2"
+                srcset="imagenes/small-img/debian/minikube-start.png 400w, imagenes/mid-img/debian/minikube-start.png 1245w, imagenes/big-img/debian/minikube-start.png 1246w"
                 >
             </div>
             <div id="punto11" class="box--item item__11">
-                <h4>11. Crear la partcion home</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in dicta incidunt cumque ipsum consequuntur eveniet ut quibusdam quaerat, similique velit unde libero atque corrupti illum. Numquam omnis nemo consectetur.</p>
-                <img src="imagenes/small-img/ubuntu/home.png" alt="Esta imagen enseña como crear la particion home" class="img img--1"
-                srcset="imagenes/small-img/ubuntu/home.png 400w, imagenes/mid-img/ubuntu/home.png 1245w, imagenes/big-img/ubuntu/home.png 1246w"
+                <h4>Paso11. Verificar inicio de minikube </h4>
+                <p>verificamos si minikube inicio correctamente con kubectl get pods</p>
+                <img src="imagenes/small-img/debian/kubelectl-get-nodes.png" alt="Esta imagen enseña como crear la particion home" class="img img--1"
+                srcset="imagenes/small-img/debian/kubelectl-get-nodes.png 400w, imagenes/mid-img/debian/kubelectl-get-nodes.png 1245w, imagenes/big-img/debian/kubelectl-get-nodes.png 1246w"
                 >
-            </div>
-            <div id="punto12" class="box--item item__12">
-                <h4>12. esquema de particion</h4>
-                <p>En este punto se anexara como deberia de quedar el esquema de particionamiento del disco
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dicta maiores id officiis delectus maxime blanditiis. Ab accusamus, quaerat hic ea nostrum exercitationem, ipsam inventore vero nam expedita officiis sequi.
-                </p>
-                <img src="imagenes/small-img/ubuntu/esquema-de-particion.png" alt="Esta imagen enseña el esquema de particion del disco" class="img img--1"
-                srcset="imagenes/small-img/ubuntu/esquema-de-particion.png 400w, imagenes/mid-img/ubuntu/esquema-de-particion.png 1245w, imagenes/big-img/ubuntu/esquema-de-particion.png 1246w"
-                >
-            </div>
-            <div id="punto13" class="box--item item__13">
-               <h4>13. Crear la cuenta de usuario</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptas ea consectetur minus dignissimos, debitis dolor magni ab expedita nobis dicta, nostrum iusto. Nisi, culpa! Modi ad magnam vero voluptates!</p>
-                <img src="ubunutIMG/cuenta.png" alt="Esta imagen enseña el menu de creacion de usaurio en linux ubuntu" class="img img--2"
-                srcset="imagenes/small-img/ubuntu/cuenta.png 400w, imagenes/mid-img/ubuntu/cuenta.png 1245w, imagenes/big-img/ubuntu/cuenta.png 1246w"
-                >
-            </div>
-            <div id="punto14" class="box--item item__14">
-                <h4>14. configurar zona horaria</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi velit, quos praesentium quibusdam illo asperiores voluptate sed culpa earum. Libero modi illo ea expedita impedit minima architecto quam itaque consectetur!</p>
-                <img src="imagenes/small-img/ubuntu/zona-horaria.png" alt="Esta imagente muestra el menu de configuracion de la zona horaria" class="img img--1"
-                srcset="imagenes/small-img/ubuntu/zona-horaria.png 400w, imagenes/mid-img/ubuntu/zona-horaria.png 1245w, imagenes/big-img/ubuntu/zona-horaria.png 1246w"
-                >
-            </div>
-            <div id="punto15" class="box--item item__15">
-                <h4>Resumen de configuración</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat ab architecto id natus ad ratione dolores rerum quas, debitis nihil, saepe amet, quis nam tempore eius. Eius, porro atque! Aperiam.</p>
-                <img src="imagenes/small-img/ubuntu/resumencut.png" alt="Esta imagen enseña un resumen de tu configuración de instalación" class=" img img--1"
-                srcset="imagenes/small-img/ubuntu/resumencut.png 400w, imagenes/mid-img/ubuntu/resumencut.png 1245w, imagenes/big-img/ubuntu/resumencut.png 1246w"
-                >
+                <p>A continuación se anexa el link al video del punto 6.1: <a href="https://drive.google.com/file/d/1XiPOB7hZS8k9RvDSjgdU2ZhGX_mKEHBV/view?usp=drive_link">link</a></p>
                 <div class="button-nav">
+                    
                     <div class="button-item"><a class="button-links"  href="actividad5.html">Anterior</a></div>
                     <div class="button-item"><a class="button-links" href="index.html">Home</a></div>
                 </div>
             </div>
+            
+           
+                
         </main>
         <aside class="box--socialnetworks">
             <nav>
@@ -167,22 +135,20 @@
                     <details>
                         <summary>En este punto</summary>
                             <ul class="list--nav">
-                                <li   class="item--nav2"><a href="#punto1" class="aside--link link__1">punto1</a></li>
-                                <li   class="item--nav2"><a href="#punto2" class="aside--link link__2">punto2</a></li>
-                                <li class="item--nav2"><a href="#punto3" class="aside--link link__3">punto3</a></li>
-                                <li  class="item--nav2"><a href="#punto4" class="aside--link link__4">punto4</a></li>
-                                <li class="item--nav2"><a href="#punto5" class="aside--link link__5">punto5</a></li>
-                                <li class="item--nav2"><a href="#punto6" class="aside--link link__6">punto6</a></li>
-                                <li  class="item--nav2"><a href="#punto7" class="aside--link link__7">punto7</a></li>
-                                <li  class="item--nav2"><a href="#punto8" class="aside--link link__8">punto8</a></li>
-                                <li  class="item--nav2"><a href="#punto9" class="aside--link link__9">punto9</a></li>
-                                <li  class="item--nav2"><a href="#punto10" class="aside--link link__10">punto10</a></li>
-                                <li  class="item--nav2"><a href="#punto11" class="aside--link link__11">punto11</a></li>
-                                <li class="item--nav2"><a href="#punto12" class="aside--link link__12 link__important">punto12</a></li>
-                                <li class="item--nav2"><a href="#punto13" class="aside--link link__13">punto13</a></li>
-                                <li class="item--nav2"><a href="#punto14" class="aside--link link__14">punto14</a></li>
-                                <li class="item--nav2"><a href="#punto15" class="aside--link link__15">punto15</a></li>
+                                <li   class="item--nav2"><a href="#punto1" class="aside--link link__1">paso1</a></li>
+                                <li   class="item--nav2"><a href="#punto2" class="aside--link link__2">paso2</a></li>
+                                <li class="item--nav2"><a href="#punto3" class="aside--link link__3">paso3</a></li>
+                                <li  class="item--nav2"><a href="#punto4" class="aside--link link__4">paso4</a></li>
+                                <li class="item--nav2"><a href="#punto5" class="aside--link link__5">paso5</a></li>
+                                <li class="item--nav2"><a href="#punto6" class="aside--link link__6">paso6</a></li>
+                                <li  class="item--nav2"><a href="#punto7" class="aside--link link__7">paso7</a></li>
+                                <li  class="item--nav2"><a href="#punto8" class="aside--link link__8">paso8</a></li>
+                                <li  class="item--nav2"><a href="#punto9" class="aside--link link__9">paso9</a></li>
+                                <li  class="item--nav2"><a href="#punto10" class="aside--link link__10">paso10</a></li>
+                                <li  class="item--nav2"><a href="#punto11" class="aside--link link__11">paso11</a></li>
+                                
                             </ul>
+                            
                     </details>
                 </div>    
             </nav>
