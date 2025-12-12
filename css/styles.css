@@ -298,4 +298,12 @@ footer{
     }
 
 }
+@media screen and (max-width: 500px) {
+       .img--box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 
